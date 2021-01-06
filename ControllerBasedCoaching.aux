@@ -1,0 +1,114 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{IEEEexample:BSTcontrol}
+\citation{Andrychowicz2020LearningDI}
+\citation{Kalashnikov2018QTOptSD}
+\citation{Lee2020LearningQL}
+\citation{Bertsekas1996NeuroDynamicP}
+\citation{Han2020ActorCriticRL}
+\citation{Weinan2017APO}
+\citation{Dupont2019AugmentedNO}
+\citation{Betancourt2018OnSO}
+\citation{Nachum2020ReinforcementLV}
+\citation{Hewing2020LearningBasedMP}
+\citation{Mohan2020EmbeddingHP}
+\citation{Lusch2018DeepLF}
+\citation{Bai2019DeepEM}
+\citation{BelbutePeres2020CombiningDP}
+\citation{Knox2009InteractivelySA}
+\citation{Knox2010CombiningMF}
+\citation{Peng2018DeepMimicED}
+\citation{Peng2020LearningAR}
+\citation{Paine2018OneShotHI}
+\citation{Xie2018LearningWT}
+\citation{Carlucho2017IncrementalQS}
+\citation{Pavse2020RIDMRI}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Performance Comparison between PID controller and its respective RL agent. We interfaced with Mujoco simulation through OpenAI GYM, and every simulated environment comes with predetermined maximum episode steps. The scores achieved by the RL agents would probably be high if not for this reason.\relax }}{1}{table.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{score_compare}{{I}{1}{Performance Comparison between PID controller and its respective RL agent. We interfaced with Mujoco simulation through OpenAI GYM, and every simulated environment comes with predetermined maximum episode steps. The scores achieved by the RL agents would probably be high if not for this reason.\relax }{table.1}{}}
+\citation{Recht2018ATO}
+\citation{6386109}
+\citation{Brockman2016OpenAIG}
+\citation{tensorforce}
+\citation{SpinningUp2018}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Comparison Between Agents Trained With and Without PID Controller Coaching. Even though the PID controllers are less capable than the eventual RL agent, they are still useful and can accelerate the RL agent training. There two measures we used to gauge training acceleration. The first is five consecutive wins, and the second is the scoring average. The "win" is a predetermined benchmark. \relax }}{2}{table.2}\protected@file@percent }
+\newlabel{episode_compare}{{II}{2}{Comparison Between Agents Trained With and Without PID Controller Coaching. Even though the PID controllers are less capable than the eventual RL agent, they are still useful and can accelerate the RL agent training. There two measures we used to gauge training acceleration. The first is five consecutive wins, and the second is the scoring average. The "win" is a predetermined benchmark. \relax }{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Controller Based Coaching}{2}{section.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces From Optimization to Learning. Model-Based or Model-Free learning refers to whether or not learning is used to approximate the system dynamics function. If there is an explicit action policy, it is called on-policy learning. Otherwise, the optimal action would be implicitly captured by the Q value function, and that would be called off-policy learning instead. Importance sampling allows "limited off-policy learning" capacity, which enables data reuse in a trusted region. Online learning means interleaving data collection and iterative network parameters update. Offline learning means the data is collected in bulk first, and then the network parameters are set with regression computation. Batch learning, as the name suggested, is in between online and offline learning. An agent would first generate data that fill its batch memory and then sample from the batch memories for iterative parameter update. New data would be generated with the updated parameters to replace older data in the memory. This taxonomy is somewhat outdated now. When Richard Sutton wrote his book, the algorisms he had in mind fall nicely into various categories. Today, however, the popular algorisms would combine more than one route to derive superior performance and can't be pigeonholed.\relax }}{2}{figure.caption.1}\protected@file@percent }
+\newlabel{fig:rl}{{1}{2}{From Optimization to Learning. Model-Based or Model-Free learning refers to whether or not learning is used to approximate the system dynamics function. If there is an explicit action policy, it is called on-policy learning. Otherwise, the optimal action would be implicitly captured by the Q value function, and that would be called off-policy learning instead. Importance sampling allows "limited off-policy learning" capacity, which enables data reuse in a trusted region. Online learning means interleaving data collection and iterative network parameters update. Offline learning means the data is collected in bulk first, and then the network parameters are set with regression computation. Batch learning, as the name suggested, is in between online and offline learning. An agent would first generate data that fill its batch memory and then sample from the batch memories for iterative parameter update. New data would be generated with the updated parameters to replace older data in the memory. This taxonomy is somewhat outdated now. When Richard Sutton wrote his book, the algorisms he had in mind fall nicely into various categories. Today, however, the popular algorisms would combine more than one route to derive superior performance and can't be pigeonholed.\relax }{figure.caption.1}{}}
+\newlabel{fig:known}{{2a}{2}{With Known Evaluation Function\relax }{figure.caption.2}{}}
+\newlabel{sub@fig:known}{{a}{2}{With Known Evaluation Function\relax }{figure.caption.2}{}}
+\newlabel{fig:unknown}{{2b}{2}{Bootstrap\relax }{figure.caption.2}{}}
+\newlabel{sub@fig:unknown}{{b}{2}{Bootstrap\relax }{figure.caption.2}{}}
+\newlabel{fig:bootstrap}{{\caption@xref {fig:bootstrap}{ on input line 165}}{2}{Controller Based Coaching}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Experiment Setup}{2}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Inverted Pendulum system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored 1 point. The average score achieved by the RL agent is 1000 and the average score achieved by the PID controller is 240.\relax }}{3}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:ip}{{3}{3}{Inverted Pendulum system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored 1 point. The average score achieved by the RL agent is 1000 and the average score achieved by the PID controller is 240.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Inveretd Pendulum}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Inverted Pendulum Coaching Result\relax }}{3}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:ip_result}{{4}{3}{Inverted Pendulum Coaching Result\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Inverted Double Pendulum}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Inverted Double Pendulum system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored at around 10 points, based on velocity on the x axis. The average score achieved by the RL agent is 9319 and the average score achieved by the PID controller is 1107. \relax }}{4}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:double}{{5}{4}{Inverted Double Pendulum system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored at around 10 points, based on velocity on the x axis. The average score achieved by the RL agent is 9319 and the average score achieved by the PID controller is 1107. \relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Double Inverted Pendulum Coaching Result.\relax }}{4}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:double_result}{{6}{4}{Double Inverted Pendulum Coaching Result.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Hopper}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Hopper system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored at around 1 point, depending on the x-axis velocity. The average score achieved by the RL agent is 989 and the average score achieved by the PID controller is 581.\relax }}{4}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:hopper}{{7}{4}{Hopper system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID controller. The maximum episode steps are 1000 and each step without termination is scored at around 1 point, depending on the x-axis velocity. The average score achieved by the RL agent is 989 and the average score achieved by the PID controller is 581.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Hopper Coaching Result. Benchmarked against training without coaching, indicated by the black dotted line.\relax }}{4}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:hopper_result}{{8}{4}{Hopper Coaching Result. Benchmarked against training without coaching, indicated by the black dotted line.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Walker}{4}{subsection.3.4}\protected@file@percent }
+\citation{Kaufmann2020DeepDA}
+\bibstyle{IEEEtran}
+\bibdata{Bibliography}
+\bibcite{Andrychowicz2020LearningDI}{1}
+\bibcite{Kalashnikov2018QTOptSD}{2}
+\bibcite{Lee2020LearningQL}{3}
+\bibcite{Bertsekas1996NeuroDynamicP}{4}
+\bibcite{Han2020ActorCriticRL}{5}
+\bibcite{Weinan2017APO}{6}
+\bibcite{Dupont2019AugmentedNO}{7}
+\bibcite{Betancourt2018OnSO}{8}
+\bibcite{Nachum2020ReinforcementLV}{9}
+\bibcite{Hewing2020LearningBasedMP}{10}
+\bibcite{Mohan2020EmbeddingHP}{11}
+\bibcite{Lusch2018DeepLF}{12}
+\bibcite{Bai2019DeepEM}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Walker system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID coach. The maximum episode steps are 1000 and each step without termination is scored at around 1 point, depending on the x-axis velocity. The average score achieved by the RL agent is 1005 and the average score achieved by the PID controller is 528.\relax }}{5}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:walker}{{9}{5}{Walker system controlled by RL agent and its PID coach. The left plot is RL agent and the right plot is the PID coach. The maximum episode steps are 1000 and each step without termination is scored at around 1 point, depending on the x-axis velocity. The average score achieved by the RL agent is 1005 and the average score achieved by the PID controller is 528.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Hopper Coaching Result. Benchmarked against training without coaching, indicated by the black dotted line.\relax }}{5}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:walker_result}{{10}{5}{Hopper Coaching Result. Benchmarked against training without coaching, indicated by the black dotted line.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclution}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{section*.11}\protected@file@percent }
+\bibcite{BelbutePeres2020CombiningDP}{14}
+\bibcite{Knox2009InteractivelySA}{15}
+\bibcite{Knox2010CombiningMF}{16}
+\bibcite{Peng2018DeepMimicED}{17}
+\bibcite{Peng2020LearningAR}{18}
+\bibcite{Paine2018OneShotHI}{19}
+\bibcite{Xie2018LearningWT}{20}
+\bibcite{Carlucho2017IncrementalQS}{21}
+\bibcite{Pavse2020RIDMRI}{22}
+\bibcite{Recht2018ATO}{23}
+\bibcite{6386109}{24}
+\bibcite{Brockman2016OpenAIG}{25}
+\bibcite{tensorforce}{26}
+\bibcite{SpinningUp2018}{27}
+\bibcite{Kaufmann2020DeepDA}{28}
