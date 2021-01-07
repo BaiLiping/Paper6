@@ -128,6 +128,9 @@ B.~S. Pavse, F.~Torabi, J.~P. Hanna, G.~Warnell, and P.~Stone, ``Ridm:
 B.~Recht, ``A tour of reinforcement learning: The view from continuous
   control,'' \emph{ArXiv}, vol. abs/1806.09460, 2018.
 
+\bibitem{Sutton1998IntroductionTR}
+R.~Sutton and A.~Barto, ``Introduction to reinforcement learning,'' 1998.
+
 \bibitem{6386109}
 E.~{Todorov}, T.~{Erez}, and Y.~{Tassa}, ``Mujoco: A physics engine for
   model-based control,'' in \emph{2012 IEEE/RSJ International Conference on

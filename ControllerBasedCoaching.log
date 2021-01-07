@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  4 JAN 2021 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  7 JAN 2021 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,7 +992,7 @@ Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count336
 
-Underfull \hbox (badness 1558) in paragraph at lines 70--71
+Underfull \hbox (badness 1558) in paragraph at lines 71--72
 \T1/ptm/m/n/10 (+20) bine ex-ist-ing sys-tem mod-els with DNN and its vari-a-
  []
 
@@ -1000,7 +1000,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 70--71
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1009,7 +1009,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1017,164 +1017,90 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<Control.png, id=102, 1101.11375pt x 646.415pt>
+<Control.png, id=94, 1101.11375pt x 646.415pt>
 File: Control.png Graphic file (type png)
 <use Control.png>
-Package pdftex.def Info: Control.png  used on input line 137.
+Package pdftex.def Info: Control.png  used on input line 129.
 (pdftex.def)             Requested size: 258.0pt x 151.45383pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 137--138
+Overfull \hbox (6.0pt too wide) in paragraph at lines 129--130
  [][] 
  []
 
-<onego.png, id=106, 433.62pt x 172.645pt>
-File: onego.png Graphic file (type png)
-<use onego.png>
-Package pdftex.def Info: onego.png  used on input line 154.
-(pdftex.def)             Requested size: 103.19843pt x 41.0879pt.
-<bootstrap.png, id=107, 591.20876pt x 391.4625pt>
-File: bootstrap.png Graphic file (type png)
-<use bootstrap.png>
-Package pdftex.def Info: bootstrap.png  used on input line 160.
-(pdftex.def)             Requested size: 154.80157pt x 102.5006pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 152--166
- []$[]$$[]$ 
- []
-
-[2 <./Control.png> <./onego.png> <./bootstrap.png>]
-<ip_RL.png, id=127, 570.13pt x 407.5225pt>
-File: ip_RL.png Graphic file (type png)
-<use ip_RL.png>
-Package pdftex.def Info: ip_RL.png  used on input line 187.
-(pdftex.def)             Requested size: 123.84283pt x 88.51727pt.
-<ip_PID.png, id=128, 570.13pt x 427.5975pt>
+[2 <./Control.png>]
+<ip_PID.png, id=113, 570.13pt x 427.5975pt>
 File: ip_PID.png Graphic file (type png)
 <use ip_PID.png>
-Package pdftex.def Info: ip_PID.png  used on input line 192.
-(pdftex.def)             Requested size: 123.84283pt x 92.87773pt.
-<ip.png, id=130, 939.51pt x 505.89pt>
+Package pdftex.def Info: ip_PID.png  used on input line 165.
+(pdftex.def)             Requested size: 126.0pt x 94.49583pt.
+<ip.png, id=115, 939.51pt x 505.89pt>
 File: ip.png Graphic file (type png)
 <use ip.png>
-Package pdftex.def Info: ip.png  used on input line 205.
+Package pdftex.def Info: ip.png  used on input line 176.
 (pdftex.def)             Requested size: 258.0pt x 138.92332pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 205--206
+Overfull \hbox (6.0pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
 
-Underfull \hbox (badness 7869) in paragraph at lines 212--213
+Underfull \hbox (badness 7869) in paragraph at lines 183--184
 \T1/ptm/m/n/10 (+20) of the fol-low-ing: [x po-si-tion of the cart, sin($\OML/c
 mm/m/it/10 ^^R[]$\T1/ptm/m/n/10 (+20) ),
  []
 
-<double_RL.png, id=132, 820.06375pt x 573.14125pt>
-File: double_RL.png Graphic file (type png)
-<use double_RL.png>
-Package pdftex.def Info: double_RL.png  used on input line 219.
-(pdftex.def)             Requested size: 123.84283pt x 86.55342pt.
-<double_PID.png, id=133, 821.0675pt x 596.2275pt>
+<double_PID.png, id=117, 821.0675pt x 596.2275pt>
 File: double_PID.png Graphic file (type png)
 <use double_PID.png>
-Package pdftex.def Info: double_PID.png  used on input line 224.
-(pdftex.def)             Requested size: 123.84283pt x 89.92154pt.
-[3 <./ip_RL.png> <./ip_PID.png> <./ip.png>]
-<double.png, id=150, 939.51pt x 505.89pt>
+Package pdftex.def Info: double_PID.png  used on input line 189.
+(pdftex.def)             Requested size: 126.0pt x 91.49544pt.
+[3 <./ip_PID.png> <./ip.png>]
+<double.png, id=134, 939.51pt x 505.89pt>
 File: double.png Graphic file (type png)
 <use double.png>
-Package pdftex.def Info: double.png  used on input line 238.
+Package pdftex.def Info: double.png  used on input line 200.
 (pdftex.def)             Requested size: 258.0pt x 138.92332pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 238--239
+Overfull \hbox (6.0pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
-<hopper_RL.png, id=152, 847.165pt x 578.16pt>
-File: hopper_RL.png Graphic file (type png)
-<use hopper_RL.png>
-Package pdftex.def Info: hopper_RL.png  used on input line 257.
-(pdftex.def)             Requested size: 123.84283pt x 84.51476pt.
-<hopper_PID.png, id=153, 832.10875pt x 604.2575pt>
-File: hopper_PID.png Graphic file (type png)
-<use hopper_PID.png>
-Package pdftex.def Info: hopper_PID.png  used on input line 262.
-(pdftex.def)             Requested size: 123.84283pt x 89.92476pt.
-<hopper.png, id=155, 939.51pt x 505.89pt>
-File: hopper.png Graphic file (type png)
-<use hopper.png>
-Package pdftex.def Info: hopper.png  used on input line 273.
-(pdftex.def)             Requested size: 258.0pt x 138.92332pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 273--274
- [][] 
- []
-
-[4 <./double_RL.png> <./double_PID.png> <./double.png> <./hopper_RL.png> <./hop
-per_PID.png> <./hopper.png>]
-<walker_RL.png, id=170, 830.10126pt x 572.1375pt>
-File: walker_RL.png Graphic file (type png)
-<use walker_RL.png>
-Package pdftex.def Info: walker_RL.png  used on input line 291.
-(pdftex.def)             Requested size: 123.84283pt x 85.35422pt.
-<walker_PID.png, id=171, 823.075pt x 608.2725pt>
-File: walker_PID.png Graphic file (type png)
-<use walker_PID.png>
-Package pdftex.def Info: walker_PID.png  used on input line 296.
-(pdftex.def)             Requested size: 123.84283pt x 91.51538pt.
-<walker.png, id=173, 939.51pt x 505.89pt>
-File: walker.png Graphic file (type png)
-<use walker.png>
-Package pdftex.def Info: walker.png  used on input line 308.
-(pdftex.def)             Requested size: 258.0pt x 138.92332pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 308--309
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./ControllerBasedCoaching.bbl [5 <./walker_RL.png> <./walker_PID.png> <./walke
-r.png>]) [6
+(./ControllerBasedCoaching.bbl [4 <./double_PID.png> <./double.png>]) [5
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
- (./ControllerBasedCoaching.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+
+(./ControllerBasedCoaching.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `ControllerBasedCoaching.out' has not changed
 .
-(rerunfilecheck)             Checksum: 8F9515AA361F322815FFF246BBF7DF8C;499.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+(rerunfilecheck)             Checksum: 05DAD190B495BBC73D251F9226CECD48;404.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 23307 strings out of 481239
- 421322 string characters out of 5920378
- 717858 words of memory out of 5000000
- 37839 multiletter control sequences out of 15000+600000
- 654821 words of font info for 269 fonts, out of 8000000 for 9000
+ 23220 strings out of 481239
+ 420029 string characters out of 5920378
+ 703660 words of memory out of 5000000
+ 37773 multiletter control sequences out of 15000+600000
+ 653613 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,60p,1709b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,60p,1889b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ControllerBasedCoaching.pdf (6 pages, 1046823 bytes).
+Output written on ControllerBasedCoaching.pdf (5 pages, 434580 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 26784 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 26206 words of extra memory for PDF output out of 29859 (max. 10000000)
 
