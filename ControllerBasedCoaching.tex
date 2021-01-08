@@ -107,7 +107,6 @@ Environment & Target & Measure  &  With PID  & Without  & Percentage\\
 \rowcolor{airforceblue}
 
    Name     & Score  &              & Coaching  & Coaching  & Increase \\
-\hline
 Inverted & 800& Win Streak & 90 & 160&  43.8\% \\
 Pendulum & &Average  & 91 &  159&  42.8\%\\
 \rowcolor{beaublue}
@@ -160,17 +159,25 @@ Our experiments' code and data can be accessed via \href{https://github.com/BaiL
 The observation space of the inverted pendulum environment is: [Cart Position on X-axis, Cart Velocity, Pole Angle, Pole Angular Velocity]. The continuous action space is an action ranging from -1 to 1, where -1 means the actuator moves the cart to the left with maximum power and 1 means the actuator moves the cart to the right with full force. The maximum episode step number is 1000. The terminal state for the inverted pendulum is an angle of absolute value greater than 0.2 radius. The reward is 1 for each non-terminal step and 0 for the terminal step. 
 
 Figure\ref{fig:ip} shows how the PID controller manages the pole angle and its angular velocity. The PID parameters are the following: kp=30,ki=0.01,kd=2.26. While the PID controller tries hard to converge to zero, eventually, there would be too much accumulation on the x-axis, and the equilibrium breaks down. The average score achieved by the PID controller is 240.
+
+
 \begin{figure}[H]
+\centering
+\begin{subfigure}{0.25\textwidth}
   \centering
-  \includegraphics[width=0.5\linewidth]{ip_PID.png}
-  \caption{Inverted Pendulum system controlled by the PID coach. The maximum episode steps are 1000 and each step without termination is scored 1 point. The average score achieved by the RL agent is 1000 and the average score achieved by the PID controller is 240.}
+  \includegraphics[width=\linewidth]{ip_PID.png}
+  \label{fig:ip_pid}
+\end{subfigure}%
+\begin{subfigure}{.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ip_PID_actions.png}
+  \label{fig:ip_pid_actions}
+\end{subfigure}
+\caption{Inverted Pendulum system controlled by the PID coach. The left plot is the angle and angular velocity against steps, and the right plot is the action against steps. The maximum episode steps are 1000 and each step without termination is scored 1 point. The average score achieved by the PID controller is 240 out of 1000.}
 \label{fig:ip}
 \end{figure}
 
 Based on our observations of the system, we decide to put the boundary between critical and noncritical states on the angular velocity with an absolute value of 0.4. The RL agent is free to explore with the angular velocity with an absolute value smaller than 0.4, but once it goes above this bound, the PID controller will kick in, trying to decrease the velocity back to the 0.4 bound.
-
-The experiment result is presented by Figure\ref{fig:ip_result}. The black line indicates the agent trained normally, and the blue line indicates the agent trained with a PID coach. A win is set to be with a score greater than 800. It takes the normal method 160 episodes to get five consecutive wins, and it takes the controller-based coaching method 90 episodes to do the same, a 43.8\% increase is observed. As measured by averaging over 20 episodes, it takes the normal method 159 episodes to go beyond 800, and it takes the controller-based coaching method 91 episodes to do the same. A 42.8\% increase is observed. On average, the acceleration brought about by a PID controller, which can only score 240 out of 1000 is 43.3\%\. The agents trained with both methods pass the evaluation, and their respective average scores are presented in the upper left corner.
-
 \begin{figure}[H]
      \centering
       \includegraphics[width=0.5\textwidth]{ip.png}
@@ -179,21 +186,44 @@ The experiment result is presented by Figure\ref{fig:ip_result}. The black line 
 
 \end{figure}
 
+The experiment result is presented by Figure\ref{fig:ip_result}. The black line indicates the agent trained normally, and the blue line indicates the agent trained with a PID coach. A win is set to be with a score greater than 800. It takes the normal method 160 episodes to get five consecutive wins, and it takes the controller-based coaching method 90 episodes to do the same, a 43.8\% increase is observed. As measured by averaging over 20 episodes, it takes the normal method 159 episodes to go beyond 800, and it takes the controller-based coaching method 91 episodes to do the same. A 42.8\% increase is observed. On average, the acceleration brought about by a PID controller, which can only score 240 out of 1000 is 43.3\%\. The agents trained with both methods pass the evaluation, and their respective average scores are presented in the upper left corner. The final performance of the RL agent is shown by Figure\ref{fig:ip_rl}.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ip_RL.png}
+  \label{fig:ip_pid}
+\end{subfigure}%
+\begin{subfigure}{.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ip_RL_actions.png}
+  \label{fig:ip_pid_actions}
+\end{subfigure}
+\caption{Inverted Pendulum system controlled by the RL agent. The left plot is the angle and angular velocity against steps, and the right plot is the action against steps. The average score achieved by the RL agent is 1000 out of 1000.}
+\label{fig:ip_rl}
+\end{figure}
+
 \subsection{Inverted Double Pendulum}
 The inverted double pendulum has observation space of the following: [x position of the cart, sin($\theta_1$), sin($\theta_2$),cos($\theta_1$),cos($\theta_2$),velocity of x, angular velocity of $\theta_1$, angular velocity of $\theta_2$, constraint force on x, constraint force on $\theta_1$, constraint force on $\theta_2$]. $\theta_1$ and $\theta_2$ are the angles of the upper and lower pole perspectively. The action space for Inverted Double Pendulum is an action ranging from -10 to 10, where -10 means the actuator moves the cart to the left with maximum power and 10 means the actuator moves the cart to the right with maximum power. A score of roughly 10 points is assigned to non-terminal states, based on the velocity on the x-axis. The detailed formula for score computation can be found at the OpenAI site.
 
 Figure\ref{fig:double} shows how the PID controller manages the lower pole angle and its angular velocity. The parameters of the PID coach is the following: kp=[-0.5,-0.5], ki=[-0.04,-0.003], kd=[-2.95,-0.56]. The actuator action is computed with the following formula: action=kp[0]*lower angle+ki[0]*integral of lower angle+kd[0]*angular velocity of lower angle+kp[1]*upper angle+ki[1]*integral of upper angle+kd[1]*angular velocity of upper angle. The PID controller functions well until the equilibrium breaks down with too much disposition on the x-axis. The average score achieved by the RL agent is 9319, and the average score achieved by the PID controller is 1107.
+
 \begin{figure}[H]
 \centering
+\begin{subfigure}{0.25\textwidth}
   \centering
-  \includegraphics[width=0.5\linewidth]{double_PID.png}
-\caption{Inverted Double Pendulum system controlled the PID coach. The maximum episode steps are 1000 and each step without termination is scored at around 10 points, based on velocity on the x axis. The average score achieved by the PID controller is 1107 out of 10000. }
+  \includegraphics[width=\linewidth]{double_PID.png}
+\end{subfigure}%
+\begin{subfigure}{.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{double_PID_actions.png}
+\end{subfigure}
+\caption{Inverted Double Pendulum system controlled the PID coach. The left plot is the angle and angular velocity against steps, and the right plot is the action against steps. The maximum episode steps are 1000 and each step without termination is scored at around 10 points, based on velocity on the x axis. The average score achieved by the PID controller is 1107 out of 10000. }
 \label{fig:double}
 \end{figure}
 
 Based on our observation of the system, we decided to put the boundary between critical and noncritical states on the lower angle of with an absolute value of 0.2. The RL agent is free to explore with the lower angle with an absolute value smaller than 0.2, but once it goes above this bound, the PID controller will kick in, trying to nudge the lower angle back to the 0.2 bound.
-
-The experiment result is presented by Figure\ref{fig:double_result}. The black line indicates the agent trained normally, and the blue line indicates the agent trained with a PID coach. A win is set to be with a score greater than 7000. It takes the normal method 1909 episodes to get five consecutive wins, and it takes controller-based coaching method 1024 episodes to do the same. An increase of 46.3\% is observed. As measured by averaging over 100 episodes, it takes normal method 2031 episodes to go beyond 7000, and it takes controller-based coaching method 1391 episodes to do the same. An increase of 31.5\% is observed. The discrepancy between the two measurements is that the agent trained with the PID controller has a higher variance in its performance. On average, the acceleration brought about by the PID controller is 38.9\%. The agents trained with both methods pass the evaluation, and their respective average scores are presented in the upper left corner.
 
 \begin{figure}[H]
      \centering
@@ -202,6 +232,21 @@ The experiment result is presented by Figure\ref{fig:double_result}. The black l
       \label{fig:double_result}
 \end{figure}
 
+The experiment result is presented by Figure\ref{fig:double_result}. The black line indicates the agent trained normally, and the blue line indicates the agent trained with a PID coach. A win is set to be with a score greater than 7000. It takes the normal method 1909 episodes to get five consecutive wins, and it takes controller-based coaching method 1024 episodes to do the same. An increase of 46.3\% is observed. As measured by averaging over 100 episodes, it takes normal method 2031 episodes to go beyond 7000, and it takes controller-based coaching method 1391 episodes to do the same. An increase of 31.5\% is observed. The discrepancy between the two measurements is that the agent trained with the PID controller has a higher variance in its performance. On average, the acceleration brought about by the PID controller is 38.9\%. The agents trained with both methods pass the evaluation, and their respective average scores are presented in the upper left corner. The final performance of the RL agent is shown by Figure\ref{fig:double_rl}.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{double_RL.png}
+\end{subfigure}%
+\begin{subfigure}{.25\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{double_RL_actions.png}
+\end{subfigure}
+\caption{Inverted Double Pendulum system controlled the RL agent. The left plot is the angle and angular velocity against steps, and the right plot is the action against steps. The average score achieved by the RL agent is 9319 out of 10000.}
+\label{fig:double_rl}
+\end{figure}
 
 
 \section{Conclution}

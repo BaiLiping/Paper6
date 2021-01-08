@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  7 JAN 2021 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.2)  8 JAN 2021 10:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,20 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count328
 \l__pdf_internal_box=\box111
 )
-(./ControllerBasedCoaching.aux)
+(./ControllerBasedCoaching.aux
+
+LaTeX Warning: Label `fig:ip_pid' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:ip_pid' multiply defined.
+
+
+LaTeX Warning: Label `fig:ip_pid_actions' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:ip_pid_actions' multiply defined.
+
+)
 \openout1 = `ControllerBasedCoaching.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -929,8 +942,7 @@ LaTeX Info: Redefining \showhyphens on input line 46.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1024,83 +1036,137 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <Control.png, id=94, 1101.11375pt x 646.415pt>
 File: Control.png Graphic file (type png)
 <use Control.png>
-Package pdftex.def Info: Control.png  used on input line 129.
+Package pdftex.def Info: Control.png  used on input line 128.
 (pdftex.def)             Requested size: 258.0pt x 151.45383pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 129--130
+Overfull \hbox (6.0pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
 [2 <./Control.png>]
-<ip_PID.png, id=113, 570.13pt x 427.5975pt>
+<ip_PID.png, id=113, 462.528pt x 346.896pt>
 File: ip_PID.png Graphic file (type png)
 <use ip_PID.png>
-Package pdftex.def Info: ip_PID.png  used on input line 165.
-(pdftex.def)             Requested size: 126.0pt x 94.49583pt.
+Package pdftex.def Info: ip_PID.png  used on input line 168.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<ip_PID_actions.png, id=114, 462.528pt x 346.896pt>
+File: ip_PID_actions.png Graphic file (type png)
+<use ip_PID_actions.png>
+Package pdftex.def Info: ip_PID_actions.png  used on input line 173.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 166--176
+ []$[]$$[]$ 
+ []
+
 <ip.png, id=115, 939.51pt x 505.89pt>
 File: ip.png Graphic file (type png)
 <use ip.png>
-Package pdftex.def Info: ip.png  used on input line 176.
+Package pdftex.def Info: ip.png  used on input line 183.
 (pdftex.def)             Requested size: 258.0pt x 138.92332pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 176--177
+Overfull \hbox (6.0pt too wide) in paragraph at lines 183--184
  [][] 
  []
 
+<ip_RL.png, id=118, 462.528pt x 346.896pt>
+File: ip_RL.png Graphic file (type png)
+<use ip_RL.png>
+Package pdftex.def Info: ip_RL.png  used on input line 195.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<ip_RL_actions.png, id=119, 462.528pt x 346.896pt>
+File: ip_RL_actions.png Graphic file (type png)
+<use ip_RL_actions.png>
+Package pdftex.def Info: ip_RL_actions.png  used on input line 200.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 
-Underfull \hbox (badness 7869) in paragraph at lines 183--184
+Overfull \hbox (6.0pt too wide) in paragraph at lines 193--203
+ []$[]$$[]$ 
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 208--209
 \T1/ptm/m/n/10 (+20) of the fol-low-ing: [x po-si-tion of the cart, sin($\OML/c
 mm/m/it/10 ^^R[]$\T1/ptm/m/n/10 (+20) ),
  []
 
-<double_PID.png, id=117, 821.0675pt x 596.2275pt>
+[3 <./ip_PID.png> <./ip_PID_actions.png> <./ip.png> <./ip_RL.png> <./ip_RL_acti
+ons.png>]
+<double_PID.png, id=139, 462.528pt x 346.896pt>
 File: double_PID.png Graphic file (type png)
 <use double_PID.png>
-Package pdftex.def Info: double_PID.png  used on input line 189.
-(pdftex.def)             Requested size: 126.0pt x 91.49544pt.
-[3 <./ip_PID.png> <./ip.png>]
-<double.png, id=134, 939.51pt x 505.89pt>
+Package pdftex.def Info: double_PID.png  used on input line 216.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<double_PID_actions.png, id=140, 462.528pt x 346.896pt>
+File: double_PID_actions.png Graphic file (type png)
+<use double_PID_actions.png>
+Package pdftex.def Info: double_PID_actions.png  used on input line 220.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 214--222
+ []$[]$$[]$ 
+ []
+
+<double.png, id=141, 939.51pt x 505.89pt>
 File: double.png Graphic file (type png)
 <use double.png>
-Package pdftex.def Info: double.png  used on input line 200.
+Package pdftex.def Info: double.png  used on input line 230.
 (pdftex.def)             Requested size: 258.0pt x 138.92332pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 200--201
+Overfull \hbox (6.0pt too wide) in paragraph at lines 230--231
  [][] 
  []
 
-(./ControllerBasedCoaching.bbl [4 <./double_PID.png> <./double.png>]) [5
+<double_RL.png, id=144, 462.528pt x 346.896pt>
+File: double_RL.png Graphic file (type png)
+<use double_RL.png>
+Package pdftex.def Info: double_RL.png  used on input line 241.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
+<double_RL_actions.png, id=145, 462.528pt x 346.896pt>
+File: double_RL_actions.png Graphic file (type png)
+<use double_RL_actions.png>
+Package pdftex.def Info: double_RL_actions.png  used on input line 245.
+(pdftex.def)             Requested size: 129.0pt x 96.7491pt.
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 239--247
+ []$[]$$[]$ 
+ []
+
+(./ControllerBasedCoaching.bbl [4 <./double_PID.png> <./double_PID_actions.png>
+ <./double.png> <./double_RL.png> <./double_RL_actions.png>]) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
 
 (./ControllerBasedCoaching.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `ControllerBasedCoaching.out' has not changed
 .
-(rerunfilecheck)             Checksum: 05DAD190B495BBC73D251F9226CECD48;404.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+(rerunfilecheck)             Checksum: 81E4A647D0C1288008A25440DAA7F9CE;404.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 23220 strings out of 481239
- 420029 string characters out of 5920378
- 703660 words of memory out of 5000000
- 37773 multiletter control sequences out of 15000+600000
+ 23269 strings out of 481239
+ 420980 string characters out of 5920378
+ 706657 words of memory out of 5000000
+ 37814 multiletter control sequences out of 15000+600000
  653613 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,60p,1889b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,60p,1889b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ControllerBasedCoaching.pdf (5 pages, 434580 bytes).
+Output written on ControllerBasedCoaching.pdf (5 pages, 591766 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 26206 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 26236 words of extra memory for PDF output out of 29859 (max. 10000000)
 
